@@ -1,3 +1,7 @@
+# https://github.com/JasonShermanII/lab11-JS-MG
+# Partner 1: Matthew Grizio
+# Parner 2: Jason Sherman
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -5,9 +9,6 @@ calculator.py
 One function per operation, in order.
 """
 
-# https://github.com/JasonShermanII/lab11-JS-MG
-# Partner 1: Matthew Grizio
-# Parner 2: Jason Sherman
 
 from importlib.metadata import pass_none
 
@@ -25,13 +26,13 @@ def hypotenuse(a,b):
 def add(a, b):
     return a + b
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 def mul(a, b):
     return a * b
 
-def log(a, b):
+def logarithm(a, b):
     if a == 0 or b == 0:
         raise ValueError
     return math.log(b, a)
