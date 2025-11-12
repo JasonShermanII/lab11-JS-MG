@@ -1,6 +1,10 @@
 import unittest
 from calculator import *
 
+# https://github.com/JasonShermanII/lab11-JS-MG
+# Partner 1: Matthew Grizio
+# Parner 2: Jason Sherman
+
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
     def test_add(self): # 3 assertions
@@ -20,18 +24,18 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(mul(5, 1), 5)
         self.assertEqual(mul(5, 0), 0)
 
-    #def test_divide(self): # 3 assertions
-        #self.assertEqual(div(6, 3), 2)
-        #self.assertEqual(div(10, 1), 10)
-        #self.assertEqual(div(20,4), 5)
+    def test_divide(self): # 3 assertions
+        self.assertEqual(div(6, 3), 2)
+        self.assertEqual(div(10, 1), 10)
+        self.assertEqual(div(20,4), 5)
     # ##########################
 
     ######## Partner 2
-    # def test_divide_by_zero(self): # 1 assertion
+    def test_divide_by_zero(self): # 1 assertion
     #     # call division function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     div(0, 5)
-    #     fill in code
+        with self.assertRaises(ZeroDivisionError):
+            div(0, 5)
+
 
     def test_logarithm(self): # 3 assertions
         self.assertAlmostEqual(log(2,8),3)
