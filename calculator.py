@@ -4,6 +4,11 @@ calculator.py
 
 One function per operation, in order.
 """
+
+# https://github.com/JasonShermanII/lab11-JS-MG
+# Partner 1: Matthew Grizio
+# Parner 2: Jason Sherman
+
 from importlib.metadata import pass_none
 
 # First example
@@ -33,5 +38,10 @@ def log(a, b):
 
 def exp(a, b):
     return a ** b
+
+def div(a, b):
+    if a == 0:
+        raise ZeroDivisionError
+    return b/a
 
 
